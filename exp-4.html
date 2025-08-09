@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Forms Example</title>
+    
+    <style>
+        
+
+
+h1 {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: gray;
+    border: 4px;
+    border-radius: 8px;
+}
+
+
+#main-heading {
+    font-size: 32px;
+}
+
+
+.intro-text {
+    font-style: italic;
+    color: green;
+}
+
+
+h1, h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+* {
+    margin: 10px;
+    padding: 3px;
+}
+
+
+.content p {
+    font-size: 14px;
+    color: gray;
+}
+
+#child-parent > h2 {
+    color: brown;
+}
+h2 + p {
+    color: blue;
+}
+h2 ~ p {
+    color: red;
+}
+
+.content p:first-child {
+    font-weight: bold;
+}
+p:hover {
+    color: red;
+}
+
+
+h1::before {
+    content: "★ ";
+    color: gold;
+}
+
+
+span.highlight::after {
+    content: " (Highlighted)";
+    color: orange;
+}
+body{
+    background-color: antiquewhite;
+}
+
+
+
+div[data-box="1"] {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+a[href] {
+    color: blue;
+    text-decoration: none;
+}
+
+a[href*="example.com"] {
+    font-weight: bold;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: lavender;
+    border: 4px;
+    border-radius: 8px;
+}
+
+    </style>
+</head>
+<body >
+
+    <h1 id="main-heading">Welcome to CSS Selectors Demo</h1>
+    <div class="container">
+    <p class="intro-text">This paragraph demonstrates the use of a class selector.</p>
+    
+    <div class="content">
+        <p class="important">This is an important paragraph inside a div.</p>
+        <p>This is a regular paragraph inside a div.</p>
+        <span class="highlight">This is a highlighted span.</span>
+    </div>
+
+    <div id="child-parent">
+        <h2>Child Selector Example</h2>
+        <p>Content here...</p>
+    </div>
+
+    <a href="https://example.com" target="_blank">Visit Example</a>
+    
+    <div class="box" data-box="1">Box 1</div>
+    <div class="box" data-box="2">Box 2</div>
+</div>
+</body>
+</html>
