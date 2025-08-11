@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>getElementById Example</title>
+</head>
+<body>
+
+  <h2 id="myHeading">Hello, world!</h2>
+
+  <button id="first" onclick="changeText()">Change Text</button>
+  <button id="second" onclick="previous()">Previous</button>
+
+
+
+
+
+
+
+
+
+  <script>
+    // Store the original text
+    let originalText = document.getElementById("myHeading").textContent;
+
+    function changeText() {
+      let heading = document.getElementById("myHeading");
+      heading.textContent = "Text has been changed!....................";
+      let first = document.getElementById("first");
+      first.style.backgroundColor="blue";
+    }
+
+    function previous() {
+      let heading = document.getElementById("myHeading");
+      heading.textContent = originalText;  // Restore the original text
+    }
+  </script>
+
+</body>
+</html>
+
