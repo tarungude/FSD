@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp-5</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Demonstration</title>
+  <style>
+    /* ===== Part A: Color References ===== */
+    .color-name {
+      color: red;
+      background-color: aliceblue;
+      
+    }
+    .hex-color {
+      color: #00ff00;
+      background-color: wheat;
+    }
+    .rgb-color {
+      color: rgb(0, 0, 255);
+    }
+    .rgba-color {
+      color: rgba(255, 0, 0, 0.5);
+    }
+    .hsl-color {
+      color: hsl(120, 100%, 50%);
+    }
+    .hsla-color {
+      color: hsla(240, 100%, 50%, 0.7);
+    }
+
+    /* ===== Part B: Background Image ===== */
+    body {
+      height: 2000px; /* make scrollable */
+      background-image: url('https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg'); /* Change to your image */
+      background-repeat: no-repeat;
+      background-position: center 50%;
+      background-attachment: fixed;
+      background-size: cover;
+      /* Flip image horizontally using pseudo-element */
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 400px;
+      background-image: url('https://t3.ftcdn.net/jpg/08/27/09/20/360_F_827092074_tUV40nTZFcjGT69jkS2EJErmYQ9HaDK6.jpg'); /* same image */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scaleX(-1); /* Horizontal flip */
+      z-index: -1;
+    }
+
+    /* ===== Part C: Font & Text Styling ===== */
+    .font-example {
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    /* ===== Part D: CSS Box Model ===== */
+    .box {
+      width: 300px;
+      height: 100px;
+      padding: 20px;            /* Padding */
+      border: 5px solid blue;   /* Border */
+      margin: 30px auto;        /* Margin (centered) */
+      background-color: lightyellow;
+      box-sizing: border-box;
+    }
+
+    .content {
+      background-color: lightcoral;
+      height: 50px;
+      
+    }
+
+    /* Utility for section headings */
+    h2 {
+      text-align: left;
+      margin-top: 60px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Part A: Color References ===== -->
+  <h2>Part A: CSS Color References</h2>
+  <p class="color-name">This is a named color (red).</p>
+  <p class="hex-color">This is a hex color (#00ff00).</p>
+  <p class="rgb-color">This is an RGB color (rgb(0, 0, 255)).</p>
+  <p class="rgba-color">This is an RGBA color (semi-transparent red).</p>
+  <p class="hsl-color">This is an HSL color (green).</p>
+  <p class="hsla-color">This is an HSLA color (semi-transparent blue).</p>
+
+  <!-- ===== Part B: Background Image ===== -->
+  <h2>Part B: Background Image Positioned Halfway and Flipped</h2>
+  <p style="text-align: center;">Scroll the page to see the background image stay fixed and flipped horizontally.</p>
+
+  <!-- ===== Part C: Font and Text Styling ===== -->
+  <h2>Part C: Font and Text Styling</h2>
+  <p class="font-example">This is a font and text styling example.</p>
+
+  <!-- ===== Part D: CSS Box Model ===== -->
+  <h2>Part D: CSS Box Model</h2>
+  <div class="box">
+    <div class="content">Content inside the box</div>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>

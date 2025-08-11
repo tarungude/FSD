@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Example</title>
+
+    <!-- Internal JavaScript (in the head) -->
+    <script>
+        function internalFunction() {
+            alert("This is an internal JavaScript function!");
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Embedding Example</h1>
+
+    <button onclick="internalFunction()">Run Internal JavaScript</button>
+    <br><br>
+    <button onclick="externalFunction()">Run External JavaScript</button>
+
+    <!-- External JavaScript (linked at the end of the body for better performance) -->
+    <script src="script.js"></script>
+</body>
+</html>
